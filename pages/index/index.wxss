@@ -1,0 +1,23 @@
+/**index.wxss**/
+page{
+  height: 100%
+}
+.contain{ 
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  background-color:#ccc;
+  height:100%;
+}
+.oImag{
+  border-radius: 50%;
+  width:200rpx;
+  height: 200rpx;
+}
+.oMargin{
+  margin: 80rpx auto 40rpx;
+}
+.oBorder{
+  border: 2rpx solid black;
+  padding: 20rpx 40rpx;
+}

@@ -1,0 +1,50 @@
+<view class='main-cont' >
+    <!-- <image class='oImage' mode='widthFix' src="/images/00.jpg" /> -->
+    <button bind:tap="getPict">获取相册</button>
+    <button bind:tap="sendDanmu">发送弹幕</button>
+  <view class='containter'>
+    <video id="video1" class="video1" vslide-gesture src="{{src}}" controls danmu-list="{{danmuList}}" danmu-btn="{{true}}" enable-danmu="{{true}}"></video>
+    <!-- <cover-view class='cover-box'>
+      <cover-image src="{{imgSrc}}"></cover-image>
+      <cover-view  class="cover-text">播放</cover-view>
+    </cover-view> -->
+  </view>
+  <view class='audio-cont'>
+    <view class='text-cont'>
+      <button size="mini" wx:if="{{!isPlay}}" bind:tap="changeState">播放</button>
+      <button size="mini" wx:else bind:tap="changeState">暂停 </button>
+    </view>
+    <view class="prog-cont">
+      <progress class="progress" percent="{{percent}}" border-radius='4'>
+        <view bind:touchstart="touchstart" bind:touchmove="circleMove" class='point' style="left:{{percent*allLength/100}}rpx"></view>
+      </progress>
+      <view class='time-cont'>
+        <text >{{log.convertTime(currentTime).minite}}:{{log.convertTime(currentTime).second}}</text>
+        <text >{{log.convertTime(allTime).minite}}:{{log.convertTime(allTime).second}}</text>
+      </view>
+    </view>
+  </view>
+  <text class='oText'>  
+    只有你自己亲身经历过这件事，你才可以做出评价己亲身经历过这件事，你才可以
+  </text>
+  <view class='nameBox'>
+    <text class='oName' space='emsp' catch:tap='tapEvent2'>----songdd</text>
+  </view>
+
+</view>
+
+<comp-index/>
+<wxs module="log">
+  function convertTime(time){
+    var second=(parseInt(time)%60).toFixed();
+    var minite=(parseInt(time)/60).toFixed();
+
+    return {
+      second:second<10?"0"+second:second,
+      minite:minite<10?"0"+minite:minite,
+    }
+  }
+  module.exports={
+    convertTime:convertTime
+  }
+</wxs>

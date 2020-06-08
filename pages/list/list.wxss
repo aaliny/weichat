@@ -1,0 +1,118 @@
+.container{
+    background-color: lightgray;
+    padding-top:0; 
+}
+.preCont{
+    background-color: #fff;
+    padding:20rpx 20rpx; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+.titleContain{
+    padding-bottom:20rpx;
+}
+.titleContain .title{
+    font-size: 50rpx;
+    padding-bottom:20rpx;
+}
+.titleContain .title .midTitle{
+    border-bottom: 2rpx solid #000;
+}
+.titleDetail{
+    font-size: 28rpx;
+}
+.imgContain{
+    width:710rpx;
+    margin:20rpx 0;
+}
+.imgContain .oImage{
+    width:100%;
+}
+.labelCont{
+    display: flex;
+    flex-wrap:wrap;
+}
+.label{
+    margin:0 10rpx 20rpx;
+    line-height: 56rpx;
+    font-size: 26rpx;
+    padding:0 10rpx ;
+    border:2rpx solid #000;
+    flex-wrap: wrap;
+}
+.labelCont .labelOne{
+    padding: 0 26rpx;
+    background-color: #000;
+    color: #fff;
+}
+.labelCont .labelLast{
+    padding: 0 26rpx;
+}
+.mainCont{
+    background-color: #fff;
+    margin:0 60rpx 30rpx; 
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.person {
+    display:flex;
+    align-content: center;
+    line-height: 80rpx;
+    font-size: 26rpx;
+}
+.person image{
+    width:80rpx;
+    height:80rpx;
+    border-radius: 50%;
+}
+.articleImg{
+    width:690rpx;  
+    height:400rpx;
+    overflow: hidden;   
+}
+.mg-20{ 
+    margin:20rpx 20rpx;
+}
+.pdl-20{
+    padding:0 20rpx;
+}
+.pd-20{
+    padding:20rpx 20rpx;
+}
+.pd-10{
+    padding:10rpx 10rpx;
+}
+.mgl-10{
+    margin:0 10rpx;
+}
+.articleImg image{
+    width:100%;
+}
+.articleEvent{
+    display: flex;
+    justify-content:space-between
+}
+.labelBlack{
+    background-color: #000;
+    border-radius: 50%;
+    width:30rpx;
+    height:30rpx;
+}
+.rightEvent{
+    display: flex;
+    align-content: center;
+}
+.point{
+    font-weight: 800;
+}
+.label2{
+    margin:0 10rpx;
+    line-height: 30rpx;
+    background-color: transparent;
+}
+.label2::after{
+    border:none
+}

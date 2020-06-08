@@ -1,0 +1,12 @@
+<view class="contain">
+  <image class="oImag oMargin" src="/images/00.jpg" />
+  <text decode="true" space="emsp">莉  莉</text>
+  <text class="oMargin oBorder" bind:tap='tapEvent'>hello</text>
+  <text > {{fpp.name}}</text>
+</view>
+<wxs module="fpp">
+  var a="wull"
+  module.exports={
+    name:a
+  }
+</wxs>

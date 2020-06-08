@@ -1,0 +1,47 @@
+<view class='container'>
+    <view class='preCont'>
+        <view class="titleContain">
+            <text class='title'>十<text class='midTitle'>月七</text>日</text>
+        </view>
+        <view class='titleDetailCon'>
+            <text class='titleDetail'>点评人鉴文：许子东访谈：研究到自己，才有价值</text>
+        </view>
+        <view class='imgContain'>
+            <image mode="widthFix" class="oImage" src="/images/00.jpg" alt="" />
+        </view>
+        <view class='labelCont'>
+            <text class='label labelOne point'>·</text>
+            <text class='label'>女性穿搭</text>
+            <text class='label'>男性传达</text>
+            <text class='label'>心理</text>
+            <text class='label'>读书</text>
+            <text class='label'>深夜阅读</text>
+            <text class='label'>心人生书里书理</text>
+            <text class='label labelLast point'>···</text>
+        </view>
+    </view>
+    <view class='mainCont' wx:for="{{list}}" wx:for-item="name" wx:key="{{name.name}}">
+        <view class='mainOne'>
+            <view class='person pd-20'>
+                <image src="/images/00.jpg" />
+                <text > {{name.name}}等 {{name.num}}个人赞了</text>
+            </view>
+            <view class='articleImg mg-20'>
+                <image mode="widthFix" src="/images/00.jpg" />
+            </view> 
+            <view class='articleTitle mg-20 pd-20'>震惊！！是谁偷走了莉莉的奶酪?快点交出来</view>   
+            <view class='articleEvent mg-20 pd-20'>
+                <text class='label' bind:tap="saveData">全文阅读</text>
+                <view class='rightEvent'>
+                    <button open-type="share" class="label2">
+                        <text wx:if="{{false}}" class=' point'>···</text>
+                        <text wx:if="{{true}}" class=' point' >###</text>
+
+                    </button>
+                    <text class='label2' data-describe='hhk' bindtap='shareEvent'>→</text>
+                    <view class='label2 labelBlack'></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
